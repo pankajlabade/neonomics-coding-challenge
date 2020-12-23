@@ -48,4 +48,19 @@ You can find the mock implementation for the remote URLs in the MockRemotes clas
 ## Sending in the assignment
 - You may send in the assignment on a git repository or as a zip.
 
+--> You can find the completed assignment at https://github.com/pankajlabade/neonomics-coding-challenge
+git clone https://github.com/pankajlabade/neonomics-coding-challenge.git
 
+## Pagination and filtering to v1 and v2 of the banks APIs. 
+
+localhost:8080/v1/banks/all
+localhost:8080/v1/banks/all?countryCode=NO&name=Norway National Bank
+localhost:8080/v1/banks/all?products=accounts
+localhost:8080/v1/banks/all?page=1&pageSize=3&countryCode=NO
+localhost:8080/v2/banks/all
+localhost:8080/v2/banks/all?countryCode=SE
+localhost:8080/v2/banks/all?name=Mbanken
+localhost:8080/v2/banks/all?page=2
+localhost:8080/v2/banks/all?auth=oauth
+
+Default values: page=1, pageSize=5
